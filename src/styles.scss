@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~uikit/src/scss/variables-theme.scss";
+@import "~uikit/src/scss/mixins-theme.scss";
+@import "~uikit/src/scss/uikit-theme.scss";
+@import "~ngx-bootstrap/datepicker/bs-datepicker.css";
+
+.uk-form-horizontal {
+    .uk-form-label {
+        width: auto;
+    }
+    .uk-form-controls {
+        margin-left: 115px;
+    }
+}
+
+
+.form-input-required {
+    & > label {
+        &:after {
+            content: '*';
+            margin-left: 3px;
+            color: red;
+        }
+    }
+}
+
+.save-button {
+    background-color: #bef9bf;
+    color: black;
+}
+
+.reset-button {
+    background-color:  #f6bfbf;
+    color: black;
+}
+
+input.ng-touched.ng-invalid, select.ng-touched.ng-invalid, textarea.ng-touched.ng-invalid {
+    border: 1px solid #f0506e !important;
+    color: #f0506e !important;
+}
